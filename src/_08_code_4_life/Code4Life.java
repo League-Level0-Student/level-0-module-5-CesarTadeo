@@ -21,16 +21,16 @@ int coding = Integer.parseInt(userHoursCoding);	{
 
 // 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-if (coding<2) {
+if (coding<=2) {
 	JOptionPane.showMessageDialog(null, "Stop watching YouTube and get coding");
 }
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
-else if (coding>=3) {
-	
+else if (coding>=3 && coding<=5) {
+	JOptionPane.showMEssageDialog(null, "You are a code ninja");
 }
 	// 4. If it is more than 5, call the method below to play the Batman theme song.
-
+else 
 	private static void playBatmanTheme() {
 		try {
 			AudioClip sound = JApplet.newAudioClip(Code4Life.class.getResource("batman.wav"));
